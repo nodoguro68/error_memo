@@ -14,8 +14,8 @@ include '../template/header.php';
             </div>
             <div class="form__body">
                 <div class="form__item">
-                    <label for="mail_address" class="form__label">メールアドレス</label>
-                    <input type="text" name="mail_address" class="form__input" id="mail_address" value="">
+                    <label for="email" class="form__label">メールアドレス</label>
+                    <input type="text" name="email" class="form__input" id="email" value="">
                     <span class="err-msg"></span>
                 </div>
                 <div class="form__item">
