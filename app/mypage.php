@@ -24,8 +24,8 @@ include '../template/header.php';
                 <p class="user-info__name">@ユーザーネーム</p>
                 <p>登録日:<span class="user-info__regisration-date">2022/01/01</span></p>
                 <div class="user-info__follow">
-                    <a href="following.php" class="user-info__link">フォロー</a>
-                    <a href="follower.php" class="user-info__link">フォロワー</a>
+                    <a href="follow.php" class="user-info__link">フォロー</a>
+                    <a href="follow.php" class="user-info__link">フォロワー</a>
                 </div>
                 <div class="user-info__memo-count">50件</div>
             </div>

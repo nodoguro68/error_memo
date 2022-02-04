@@ -17,8 +17,8 @@ require_once '../template/header.php';
             <a href="user_detail.php"><img src="" alt="プロフィール画像" class="user-info__profile-img"></a>
             <p class="user-info__name">@ユーザーネーム</p>
             <div class="user-info__follow">
-                <a href="following.php" class="user-info__link">フォロー</a>
-                <a href="follower.php" class="user-info__link">フォロワー</a>
+                <a href="follow.php" class="user-info__link">フォロー</a>
+                <a href="follow.php" class="user-info__link">フォロワー</a>
             </div>
             <form class="follow-form">
                 <button type="submit" class="follow-btn">フォローする</button>
