@@ -3,11 +3,16 @@ var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var cleancss = require('gulp-clean-css');
 var imagemin = require('gulp-imagemin')
-var changed = require('gulp-changed')
+var changed = require('gulp-changed');
+var plumber = require('gulp-plumber');
+var notify = require('gulp-notify');
 
 // sassコンパイル
 gulp.task('sass', function() {
     return gulp.src('resource/scss/style.scss')
+        .pipe(plumber({errorHandler: notify.onError(
+			"Error: <%= error.message %>"
+		)}))
         .pipe(sass())
         .pipe(cleancss())
         .pipe(gulp.dest('public/css/'));
@@ -34,4 +39,8 @@ gulp.task('uploadsmin', function () {
         .pipe(gulp.dest('public/uploads/'))
 });
 
-gulp.task('default', ['sass', 'uglify', 'imagemin', 'uploadsmin']);
+gulp.task('default', ['uglify', 'imagemin', 'uploadsmin']);
+
+gulp.task('watch', function() {
+    gulp.watch('resource/scss/**/*.scss', ['sass']);
+});
