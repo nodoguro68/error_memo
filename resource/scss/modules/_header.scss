@@ -1,9 +1,32 @@
 .header {
-    height: 100px;
+    height: 120px;
 
     .header-wrap {
         height: 100%;
-        padding: 0 10px;
+        padding: 5px 10px;
     }
 }
 
+.header__logo {
+    font-size: $fz-3l;
+}
+
+.header__nav {
+    .header__menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .header__item {
+        
+        &:hover {
+            color: $c-default;
+            border-bottom: 3px solid $c-default;
+        }
+    }
+    
+    .header__link {
+        display: block;
+        padding: 10px;
+    }
+}
