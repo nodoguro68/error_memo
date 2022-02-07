@@ -9,6 +9,11 @@
 
 .header__logo {
     font-size: $fz-3l;
+
+    a {
+        color: $c-accent;
+        font-weight: bold;
+    }
 }
 
 .header__nav {

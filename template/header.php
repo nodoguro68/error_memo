@@ -1,7 +1,7 @@
 <header class="header">
     <div class="header-wrap">
         <div class="logo-wrap">
-            <h1 class="header__logo"><a href="index.php">error memo</a></h1>
+            <h1 class="header__logo"><a href="index.php" class="header__link">error memo</a></h1>
         </div>
         <nav class="header__nav">
             <ul class="header__menu">
