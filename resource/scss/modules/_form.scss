@@ -1,0 +1,106 @@
+.form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px 0;
+
+    .form__header {
+        .form__title {
+            font-size: $fz-xl;
+            text-align: center;
+        }
+
+        .form__description {
+            margin-top: $space_xl;
+        }
+
+        .err-msg__area {
+            padding: 20px 10px;
+            background: $bg-error;
+            color: $c-error;
+            border-radius: 3px;
+        }
+
+    }
+
+    .form__body {
+        margin-top: $space-3l;
+
+        .form__item {
+            position: relative;
+        }
+
+        .form__item + .form__item {
+            margin-top: $space_l;
+        }
+        
+        .form__label {
+            display: block;
+        }
+        
+        .form__note {
+            position: absolute;
+            top: 5px;
+            right: 0;
+            font-size: $fz-m;
+            color: $c-note;
+        }
+        
+        .form__input {
+            outline: none;
+            width: 100%;
+            border-radius: 3px;
+            padding: 10px 10px;
+            background: $bg-main;
+
+            &--error {
+                background: $bg-error;
+            }
+        }
+
+        .form__textarea {
+            width: 100%;
+            outline: none;
+            resize: none;
+            background: $bg-main;
+            padding: 10px 10px;
+            border-radius: 3px;
+        }
+
+        .form__err-msg {
+            color: $c-error;
+        }
+
+        .form__count-area {
+            text-align: right;
+        }
+    }
+
+    .form__footer {
+        margin-top: $space_3l;
+
+        .btn-wrap {
+            margin-top: $space_m;
+
+            .btn {
+                width: 100%;
+                padding: 10px 0;
+                text-align: center;
+                background: $bg-accent;
+                color: #fff;
+                border-radius: 3px;
+            }
+        }
+
+        .link-wrap {
+            margin-top: $space_xl;
+            text-align: center;
+            
+            .link {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+
