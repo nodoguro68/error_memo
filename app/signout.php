@@ -16,6 +16,8 @@ include '../template/header.php';
                 <h2 class="form__title">退会</h2>
                 <p class="form__description">
                     退会するにはメールアドレスとパスワードが必要です。
+                </p>
+                <p>
                     退会すると全てのデータが削除されます。
                 </p>
                 <span class="err-msg"></span>
@@ -33,7 +35,7 @@ include '../template/header.php';
                 </div>
             </div>
             <div class="form__footer">
-                <div class="btn-container">
+                <div class="btn-wrap">
                     <input type="submit" value="退会" class="btn">
                 </div>
             </div>

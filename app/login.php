@@ -10,18 +10,20 @@ include '../template/header.php';
         <form method="post" class="form">
             <div class="form__header">
                 <h2 class="form__title">ログイン</h2>
-                <span class="err-msg"></span>
+                <div class="err-msg__area">
+                    <span class="err-msg">aaaaaaa</span>
+                </div>
             </div>
             <div class="form__body">
                 <div class="form__item">
                     <label for="email" class="form__label">メールアドレス</label>
-                    <input type="text" name="email" class="form__input" id="email" value="">
-                    <span class="err-msg"></span>
+                    <input type="text" name="email" class="form__input form__input--error" id="email" value="">
+                    <span class="form__err-msg"></span>
                 </div>
                 <div class="form__item">
                     <label for="password" class="form__label">パスワード<span class="form__note">半角英数字8文字以上</span></label>
                     <input type="password" name="password" class="form__input" id="password" value="">
-                    <span class="err-msg"></span>
+                    <span class="form__err-msg">aaa</span>
                 </div>
             </div>
             <div class="form__footer">
@@ -32,8 +34,8 @@ include '../template/header.php';
                     <input type="submit" value="ログイン" class="btn">
                 </div>
                 <div class="link-wrap">
-                    <a href="pass_remind_send.php" class="form__link">パスワードを忘れた場合はこちら</a>
-                    <a href="signup.php" class="form__link">新規登録はこちら</a>
+                    <a href="pass_remind_send.php" class="link">パスワードを忘れた場合</a>
+                    <a href="signup.php" class="link">新規登録</a>
                 </div>
             </div>
         </form>

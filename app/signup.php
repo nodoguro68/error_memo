@@ -31,11 +31,11 @@ include '../template/header.php';
                 </div>
             </div>
             <div class="form__footer">
-                <div class="btn-container">
+                <div class="btn-wrap">
                     <input type="submit" value="登録" class="btn">
                 </div>
-                <div class="link-container">
-                    <a href="login.php" class="form__link">ログインはこちら</a>
+                <div class="link-wrap">
+                    <a href="login.php" class="link">ログイン</a>
                 </div>
             </div>
         </form>

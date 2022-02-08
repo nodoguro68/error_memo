@@ -13,10 +13,12 @@ include '../template/header.php';
                 <span class="err-msg"></span>
             </div>
             <div class="form__body">
-                <div class="form__item-img">
-                    <input type="file" name="form__file" class="form__file">
-                    <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
-                    <img src="" alt="プロフィール画像" class="profile-img">
+                <div class="form__item">
+                    <div class="preview">
+                        <input type="file" name="profile_img" class="preview__file">
+                        <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
+                        <img src="../public/images/no-image.jpeg" alt="プロフィール画像" class="preview__img">
+                    </div>
                 </div>
                 <div class="form__item">
                     <label for="user_name" class="form__label">ユーザーネーム</label>
@@ -26,7 +28,7 @@ include '../template/header.php';
                 <div class="form__item">
                     <label for="description" class="form__label">自己紹介</label>
                     <textarea name="description" class="form__textarea" id="description"></textarea>
-                    <div class=""><span class="">0</span>/200</div>
+                    <div class="form__count-area"><span class="count">0</span>/200</div>
                     <span class="err-msg"></span>
                 </div>
                 <div class="form__item">
