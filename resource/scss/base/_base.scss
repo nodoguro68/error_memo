@@ -11,6 +11,10 @@ ul {
     list-style: none;
 }
 
+main {
+    background: $bg-base;
+}
+
 .container {
     margin: 0 auto;
     max-width: $site-width;
