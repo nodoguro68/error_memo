@@ -1,0 +1,158 @@
+.memo-form {
+    background: $bg-base;
+
+    .memo-form__inner {
+        padding: 30px;
+    }
+    
+    .memo-form__header {
+
+        .memo-form__title {
+            text-align: center;
+            font-size: $space-xxl;
+        }
+
+        .err-msg__area {
+            display: none;
+            margin-top: $space-s;
+            padding: 30px;
+            background: $bg-error;
+            border-radius: 3px;
+            color: $c-error;
+        }
+
+        .memo-form__item {
+            position: relative;
+            margin-top: $space-m;
+
+            &--2column {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: $space-l;
+            }
+        }
+
+        .memo-form__require-label {
+            display: block;
+            position: absolute;
+            top: 2px;
+            right: 0;
+            color: $c-main;
+            background: $bg-warning;
+            font-size: $fz-s;
+            padding: 0 5px;
+        }
+        
+        .memo-form__selectbox-wrap {
+            position: relative;
+
+            &::after {
+                content:"";
+                display:block;
+                width:10px;
+                height:10px;
+                position:absolute;
+                right:5%;
+                top:35%;
+                border-bottom:#333 2px solid;
+                border-right:#333 2px solid;
+                transform:rotate(45deg)translateY(-30%);
+            }
+        }
+        
+
+        .memo-form__selectbox {
+            width: 300px;
+            padding: 3px 10px;
+            background: $bg-main;
+            outline: none;
+            border-radius: 10px;
+
+        }
+
+        .memo-form__input {
+            width: 100%;
+            padding: 10px;
+            background: $bg-main;
+            border-radius: 3px;
+            outline: none;
+        }
+
+        .btn-wrap {
+            text-align: right;
+        }
+        
+    }
+
+    .memo-form__body {
+        margin-top: $space-3l;
+
+        .memo-form__item + .memo-form__item {
+            margin-top: $space-l;
+        }
+
+        .memo-form__label {
+            display: block;
+        }
+
+        .memo-form__input {
+            width: 100%;
+            padding: 10px;
+            background: $bg-main;
+            border-radius: 3px;
+            outline: none;
+        }
+
+        .memo-form__input + .memo-form__input {
+            margin-top: $space-m;
+        }
+
+        .memo-form__textarea {
+            width: 100%;
+            min-height: 150px;
+            padding: 10px;
+            background: $bg-main;
+            border-radius: 3px;
+            resize: none;
+            outline: none;
+        }
+
+        .memo-form__textarea--dynamic + .memo-form__textarea--dynamic {
+            margin-top: $space-m;
+        }
+
+        .btn-wrap {
+            margin-top: $space-m;
+            text-align: right;
+
+            .add-input-btn {
+                width: 35px;
+                height: 35px;
+                border-radius: 5px;
+                text-align: center;
+                border: 3px solid $c-accent;
+                color: $c-accent;
+                background: $bg-main;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .memo-form__footer {
+        margin-top: $space-3l;
+
+        .btn-wrap {
+            text-align: center;
+
+            .submit-btn {
+                width: 300px;
+                padding: 10px 5px;
+                background: $bg-accent;
+                color: #fff;
+                border-radius: 3px;
+            }
+        }
+    }
+
+}
