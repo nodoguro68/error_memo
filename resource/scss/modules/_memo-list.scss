@@ -1,0 +1,30 @@
+.memo-list {
+
+    .memo-list__item {
+        position: relative;
+    }
+
+    .memo-list__item + .memo-list__item {
+        border-top: 1px solid $c-base;
+    }
+
+    .memo-list__link {
+        display: block;
+        padding: 10px 5px;
+    }
+
+    .memo-list__head {
+        position: relative;
+        font-size: $fz-s;
+    }
+
+    .memo-list__date {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .memo-list__title {
+        font-weight: bold;
+    }
+}
