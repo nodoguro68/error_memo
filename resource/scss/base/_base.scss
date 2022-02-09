@@ -13,10 +13,30 @@ ul {
 
 main {
     background: $bg-base;
+    min-height: 700px;
+    position: relative;
 }
 
 .container {
     margin: 0 auto;
     max-width: $site-width;
     padding: 30px 4%;
+
+    &--2column {
+        display: flex;
+    }
+}
+
+.sidebar {
+    width: 30%;
+    min-height: 500px;
+    padding: 10px;
+    background: $bg-main;
+}
+
+.contents {
+    width: 65%;
+    min-height: 500px;
+    margin-left: 5%;
+    background: $bg-main;
 }

@@ -43,8 +43,8 @@ $bg-error: rgb(243, 202, 202);
 
 // 文字色
 $c-default: rgb(0, 0, 0);
-// $c-base: ;
-// $c-main: ;
+$c-base: rgb(242, 244, 245);
+$c-main: rgb(255, 255, 255);
 $c-accent: rgb(013, 053, 099);
 $c-nav: rgb(100, 100, 100);
 // $c-footer_nav: ;
@@ -67,3 +67,5 @@ $c-note: rgb(230, 0, 18);
 // $c-pagination_active: ;
 // $c-input: ;
 // $c-code: ;
+
+$border_color-list: rgb(207, 207, 207);
