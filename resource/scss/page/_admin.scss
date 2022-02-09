@@ -38,7 +38,6 @@
 
 .category-form {
     display: flex;
-    justify-content: space-between;
     margin-top: $space-xxl;
 
     .category-form__input {
@@ -66,13 +65,8 @@
         border-bottom: 1px solid $border_color-list;
     }
 
-    .category-list__name {
-
-    }
-
     .category-list__btn {
         position: absolute;
-        // top: 50%;
         right: 20px;
     }
 }
