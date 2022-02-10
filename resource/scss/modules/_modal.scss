@@ -7,14 +7,12 @@
     margin: 0 auto;
     transform: translate(-50%, -50%);
     background: #fff;
+    max-width: 500px;
+    width: 80%;
+    min-height: 150px;
+    padding: 50px 30px;
 
-    .modal__inner {
-        width: 300px;
-        min-height: 150px;
-        padding: 50px 30px;
-    }
-
-    .modal__form {
+    .modal__body {
         margin-top: $space-xxl;
     }
 
@@ -31,6 +29,7 @@
             }
 
             &--delete {
+                border: 1px solid rgb(219, 63, 63);
                 background: rgb(219, 63, 63);
                 color: #fff;
             }

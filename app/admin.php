@@ -46,8 +46,10 @@ include '../template/header.php';
     </div>
 
     <div class="modal">
-        <div class="modal__inner">
+        <div class="modal__head">
             <p class="modal__text">本当に削除してよろしいですか？</p>
+        </div>
+        <div class="modal__body">
             <form method="post" class="modal__form">
                 <div class="btn-wrap">
                     <button type="button" class="modal-btn modal-btn--cancel">キャンセル</button>
