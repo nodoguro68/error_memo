@@ -1,0 +1,24 @@
+.folder {
+    min-height: 600px;
+    padding: 30px;
+    background: $bg-main;
+
+    .folder__header {
+        position: relative;
+    }
+
+    .folder__title {
+        font-size: $fz-xl;
+    }
+
+    .folder__delete-btn {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        transform: translateY(-50%);
+    }
+
+    .folder__body {
+        margin-top: $space-3l;
+    }
+}
