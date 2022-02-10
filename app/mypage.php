@@ -8,8 +8,8 @@ include '../template/header.php';
 <main class="main">
     <div class="tab">
         <ul class="tab__inner">
-            <li class="tab__item">フォルダ</li>
-            <li class="tab__item tab__item--active">未解決</li>
+            <li class="tab__item tab__item--active">フォルダ</li>
+            <li class="tab__item">未解決</li>
             <li class="tab__item">解決済</li>
             <li class="tab__item">いいね</li>
             <li class="tab__item">設定</li>
@@ -18,7 +18,7 @@ include '../template/header.php';
 
     <div class="container">
 
-        <div class="tab-menu">
+        <div class="tab-menu  tab-menu--active">
             <form method="post" class="folder-form">
                 <input type="text" name="create_folder" class="folder-form__input" placeholder="フォルダを作成">
                 <input type="submit" value="＋" class="folder-form__submit-btn" disabled>
@@ -96,7 +96,7 @@ include '../template/header.php';
             </ul>
         </div>
 
-        <div class="tab-menu tab-menu--active">
+        <div class="tab-menu">
             <div class="mypage-contents">
                 <div class="user-info">
                     <div class="img-wrap">
