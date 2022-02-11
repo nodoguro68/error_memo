@@ -7,59 +7,103 @@ require_once '../template/header.php';
 
 <main class="main">
     <div class="container">
-        <div class="link-wrap">
-            <a href="index.php" class="link">戻る</a>
-        </div>
-
-
-        <!-- ユーザー情報 -->
-        <div class="user-info">
-            <a href="user_detail.php"><img src="" alt="プロフィール画像" class="user-info__profile-img"></a>
-            <p class="user-info__name">@ユーザーネーム</p>
-            <div class="user-info__follow">
-                <a href="follow.php" class="user-info__link">フォロー</a>
-                <a href="follow.php" class="user-info__link">フォロワー</a>
+        <div class="contents user-contents">
+            <div class="contents__head">
+                <div class="user-info">
+                    <a href="user_detail.php"><img src="../public/images/no-image.jpeg" alt="プロフィール画像" class="user-info__profile-img"></a>
+                    <p class="user-info__name">@ユーザーネーム</p>
+                    <p>登録日:<span class="user-info__regisration-date">2022/01/01</span></p>
+                    <div class="user-info__count-area">
+                        <div class="user-info__count-item">
+                            全<span class="user-info__count">50</span>件
+                        </div>
+                    </div>
+                </div>
             </div>
-            <form class="follow-form">
-                <button type="submit" class="follow-btn">フォローする</button>
-            </form>
-            <div class="link-wrap">
-                <p class="user-info__url">Github: <a href="user-info__link">url</a></p>
-                <p class="user-info__url">Facebook: <a href="user-info__link">url</a></p>
-                <p class="user-info__url">Twitter: <a href="user-info__link">url</a></p>
-                <p class="user-info__url">Qiita: <a href="user-info__link">url</a></p>
-                <p class="user-info__url">Blog: <a href="user-info__link">url</a></p>
-            </div>
-        </div>
 
-        <section class="section">
-            <div class="section__header">
-                <ul class="tabs">
-                    <li class="tab">メモ</li>
-                    <li class="tab">お気に入り</li>
+            <div class="contents__body">
+                <ul class="url-list">
+                    <li class="url-list__item">
+                        <span class="url-list__title">Github</span>
+                        <a href="" class="url-list__link">Github</a>
+                    </li>
+                    <li class="url-list__item">
+                        <span class="url-list__title">Facebook</span>
+                        <a href="" class="url-list__link">Facebook</a>
+                    </li>
+                    <li class="url-list__item">
+                        <span class="url-list__title">Twitter</span>
+                        <a href="" class="url-list__link">Twitter</a>
+                    </li>
+                    <li class="url-list__item">
+                        <span class="url-list__title">Qitta</span>
+                        <a href="" class="url-list__link">Qitta</a>
+                    </li>
+                    <li class="url-list__item">
+                        <span class="url-list__title">Blog</span>
+                        <a href="" class="url-list__link">Blog</a>
+                    </li>
                 </ul>
-            </div>
 
-            <div class="section_body">
-                <div class="tab-menu">
-                    <!-- ユーザーのメモ -->
-                    <ul class="memo-list">
-                        <li class="memo-list__item"><a href="memo_detail.php" class="memo-list__link">メモ</a></li>
+                <div class="user-detail-tab">
+                    <ul class="tab">
+                        <li class="tab__item tab__item--active">メモ</li>
+                        <li class="tab__item">お気に入り</li>
                     </ul>
                 </div>
 
-                <div class="tab-menu">
-                    <!-- ユーザーのお気に入りメモ -->
-                    <ul class="">
-                        <li class="memo-list__item">
-                            <a href="memo_form.php" class="memo-list__link">自分のメモ</a>
-                            <a href="memo_detail.php" class="memo-list__link">メモ</a>
-                        </li>
-                    </ul>
+                <div class="tab-menu-wrap">
+                    <div class="tab-menu tab-menu--active">
+                        <ul class="memo-list">
+                            <li class="memo-list__item">
+                                <a href="memo_detail.php" class="memo-list__link">
+                                    <div class="memo-list__head">
+                                        <span class="memo-list__category">カテゴリー</span>
+                                        <span class="memo-list__date">2022/01/01</span>
+                                    </div>
+                                    <div class="memo-list__body">
+                                        <span class="memo-list__title">未解決メモ</span>
+                                    </div>
+                                    <div class="memo-list__foot">
+                                        <div class="memo-list__favor">
+                                            <span class="memo-list__favor-icon"><i class="far fa-heart"></i></span>
+                                            <span class="memo-list__favor-count">1</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-menu">
+                        <ul class="memo-list">
+                            <li class="memo-list__item">
+                                <a href="memo_detail.php" class="memo-list__link">
+                                    <div class="memo-list__head">
+                                        <span class="memo-list__category">カテゴリー</span>
+                                        <span class="memo-list__date">2022/01/01</span>
+                                    </div>
+                                    <div class="memo-list__body">
+                                        <span class="memo-list__title">お気に入りメモ</span>
+                                    </div>
+                                    <div class="memo-list__foot">
+                                        <div class="memo-list__user-info">
+                                            <img src="../public/images/no-image.jpeg" alt="" class="memo-list__profile-img">
+                                            <span class="memo-list__username">@ユーザー</span>
+                                        </div>
+                                        <div class="memo-list__favor">
+                                            <span class="memo-list__favor-icon"><i class="far fa-heart"></i></span>
+                                            <span class="memo-list__favor-count">1</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </section>
-    </div>
+
+        </div>
 
 </main>
 
