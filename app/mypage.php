@@ -18,7 +18,7 @@ include '../template/header.php';
 
     <div class="container">
 
-        <div class="tab-menu  tab-menu--active">
+        <div class="tab-menu">
             <form method="post" class="folder-form">
                 <input type="text" name="create_folder" class="folder-form__input" placeholder="フォルダを作成">
                 <input type="submit" value="＋" class="folder-form__submit-btn" disabled>
@@ -28,6 +28,7 @@ include '../template/header.php';
             <ul class="folder-list">
                 <li class="folder-list__item">
                     <a href="folder.php?folder_id=" class="folder-list__link">
+                        <i class="far fa-folder"></i>
                         フォルダ
                         <span class="folder-list__count">1</span>
                     </a>
@@ -58,10 +59,15 @@ include '../template/header.php';
                 <li class="memo-list__item">
                     <a href="memo_form.php" class="memo-list__link">
                         <div class="memo-list__head">
-                            <span class="memo-list__folder">フォルダ</span>
+                            <span class="memo-list__category">カテゴリー</span>
                             <span class="memo-list__date">2022/01/01</span>
                         </div>
-                        <span class="memo-list__title">未解決メモ</span>
+                        <div class="memo-list__body">
+                            <span class="memo-list__title">未解決メモ</span>
+                        </div>
+                        <div class="memo-list__foot">
+                            <span class="memo-list__folder"><i class="far fa-folder"></i>フォルダ</span>
+                        </div>
                     </a>
                 </li>
             </ul>
@@ -73,30 +79,64 @@ include '../template/header.php';
                 <li class="memo-list__item">
                     <a href="" class="memo-list__link">
                         <div class="memo-list__head">
-                            <span class="memo-list__folder">フォルダ</span>
+                            <span class="memo-list__label memo-list__label--public">公開済</span>
+                            <span class="memo-list__category">カテゴリー</span>
                             <span class="memo-list__date">2022/01/01</span>
                         </div>
-                        <span class="memo-list__title">解決済メモ</span>
+                        <div class="memo-list__body">
+                            <span class="memo-list__title">解決済メモ</span>
+                        </div>
+                        <div class="memo-list__foot">
+                            <span class="memo-list__folder"><i class="far fa-folder"></i>フォルダ</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="memo-list__item">
+                    <a href="" class="memo-list__link">
+                        <div class="memo-list__head">
+                            <span class="memo-list__label memo-list__label--private">非公開</span>
+                            <span class="memo-list__category">カテゴリー</span>
+                            <span class="memo-list__date">2022/01/01</span>
+                        </div>
+                        <div class="memo-list__body">
+                            <span class="memo-list__title">解決済メモ</span>
+                        </div>
+                        <div class="memo-list__foot">
+                            <span class="memo-list__folder"><i class="far fa-folder"></i>フォルダ</span>
+                        </div>
                     </a>
                 </li>
             </ul>
+            </section>
         </div>
 
-        <div class="tab-menu">
+        <div class="tab-menu tab-menu--active">
             <ul class="memo-list">
                 <li class="memo-list__item">
                     <a href="" class="memo-list__link">
                         <div class="memo-list__head">
-                            <span class="memo-list__username">@ユーザー</span>
+                            <span class="memo-list__category">カテゴリー</span>
                             <span class="memo-list__date">2022/01/01</span>
                         </div>
-                        <span class="memo-list__title">エラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラー</span>
+                        <div class="memo-list__body">
+                            <span class="memo-list__title">お気に入りメモ</span>
+                        </div>
+                        <div class="memo-list__foot">
+                            <div class="memo-list__user-info">
+                                <img src="../public/images/tsutsuiayame_prof.jpeg" alt="" class="memo-list__profile-img">
+                                <span class="memo-list__username">@ユーザー</span>
+                            </div>
+                            <div class="memo-list__favor">
+                                <span class="memo-list__favor-icon"><i class="far fa-heart"></i></span>
+                                <span class="memo-list__favor-count">1</span>
+                            </div>
+                        </div>
                     </a>
                 </li>
             </ul>
         </div>
 
-        <div class="tab-menu">
+        <div class="tab-menu tab-menu--active">
             <div class="mypage-contents">
                 <div class="user-info">
                     <div class="img-wrap">
@@ -104,10 +144,10 @@ include '../template/header.php';
                     </div>
                     <p class="user-info__name">@ユーザーネーム</p>
                     <p>登録日:<span class="user-info__regisration-date">2022/01/01</span></p>
-                    <div class="user-info__follow">
+                    <!-- <div class="user-info__follow">
                         <a href="follow.php" class="user-info__link">0フォロー</a>
                         <a href="follow.php" class="user-info__link">0フォロワー</a>
-                    </div>
+                    </div> -->
                     <div class="user-info__count-area">
                         <div class="user-info__count-item">
                             未解決<span class="user-info__count">50</span>件

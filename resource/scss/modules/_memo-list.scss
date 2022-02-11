@@ -1,4 +1,5 @@
 .memo-list {
+    color: rgb(182, 179, 179);
 
     .memo-list__item {
         position: relative;
@@ -12,22 +13,30 @@
         display: block;
         padding: 15px 5px;
     }
+}
 
-    .memo-list__head {
-        position: relative;
-        font-size: $fz-s;
-    }
+.memo-list__head {
+    position: relative;
+    font-size: $fz-s;
 
     .memo-list__label {
         padding: 5px;
         color: $c-main;
-
+    
         &--unsolved {
             background: $bg-warning;
         }
-
+    
         &--solved {
             background: rgb(6, 255, 81);
+        }
+
+        &--public {
+            background: $bg-accent;
+        }
+
+        &--private {
+            background: $bg-warning;
         }
     }
 
@@ -36,10 +45,35 @@
         top: 0;
         right: 0;
     }
+}
+
+
+.memo-list__body {
+    margin-top: $space-m;
 
     .memo-list__title {
         display: block;
         margin-top: $space-s;
+        font-size: $fz-xl;
+        color: $c-accent;
         font-weight: bold;
+    }
+}
+
+
+.memo-list__foot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: $space-m;
+
+    .memo-list__profile-img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .memo-list__username {
+        font-size: $fz-s;
     }
 }
