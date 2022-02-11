@@ -1,0 +1,24 @@
+.search-form {
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+    
+    .search-form__input {
+        width: 100%;
+        padding: 10px;
+        background: $bg-base;
+        border-radius: 10px;
+        outline: none;
+    }
+
+    .search-form__submit-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px;
+        border-radius: 0 10px 10px 0;
+        background: $bg-accent;
+        color: $c-main;
+    }
+
+}
