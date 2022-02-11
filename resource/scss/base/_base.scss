@@ -29,14 +29,48 @@ main {
 
 .sidebar {
     width: 30%;
-    min-height: 500px;
+    min-height: 600px;
     padding: 10px;
     background: $bg-main;
 }
 
 .contents {
-    width: 65%;
-    min-height: 500px;
-    margin-left: 5%;
+    min-height: 600px;
+    padding: 30px;
     background: $bg-main;
+
+    &--2column {
+        width: 65%;
+        margin-left: 5%;
+    }
+
+    // &--index {
+
+    //     .contents__body {
+    //         border-top: 1px solid rgb(182, 179, 179);
+    //     }
+    // }
+
+    .contents__head {
+        position: relative;
+
+        .contents__title {
+            font-size: $fz-xxl;
+        }
+
+        .contents__delete-btn {
+            position: absolute;
+            top: 20px;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+
+    .contents__body {
+        margin-top: $space-3l;
+    }
+
+    .contents__foot {
+        margin-top: $space-3l;
+    }
 }

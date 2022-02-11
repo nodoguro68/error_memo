@@ -20,27 +20,30 @@ include '../template/header.php';
             </div>
         </aside>
 
-        <section class="contents">
+        <section class="contents contents--2column">
             <div class="contents__inner">
-                <section class="admin-contents">
-                    <h2 class="admin-contents__title">カテゴリー一覧</h2>
-
+                <div class="contents__head">
+                    <h2 class="contents__title">カテゴリー一覧</h2>
+                    
                     <div class="err-msg__area">
                         <span class="err-msg">エラー</span>
                     </div>
+                </div>
 
+                <div class="contents__body">
                     <form method="post" class="category-form">
                         <input type="text" name="category" class="category-form__input" placeholder="カテゴリーを入力">
                         <input type="submit" value="保存" class="category-form__submit-btn">
                     </form>
-
+    
                     <ul class="category-list">
                         <li class="category-list__item">
                             <span class="category-list__name">カテゴリー</span>
                             <button type="button" class="category-list__btn">削除</button>
                         </li>
                     </ul>
-                </section>
+                </div>
+
             </div>
         </section>
     </div>
