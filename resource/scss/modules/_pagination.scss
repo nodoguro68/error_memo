@@ -1,0 +1,36 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    // width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+
+    .pagination__item + .pagination__item {
+        margin-left: $space-s;
+    }
+
+    .pagination__link {
+        display: block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 5px;
+        text-align: center;
+        border: 1px solid $c-accent;
+        background: $bg-main;
+        font-weight: bold;
+
+        &--arrow {
+            background: $bg-base;
+            color: $c-accent;
+            border: none;
+        }
+
+        &--active {
+            background: $bg-accent;
+            color: $c-main;
+            border: none;
+
+        }
+    }
+}
