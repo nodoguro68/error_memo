@@ -1,0 +1,17 @@
+.error {
+    text-align: center;
+
+    .error__code {
+        display: block;
+        font-size: 100px;
+    }
+
+    .error__title {
+        font-size: $fz-3l;
+        font-weight: bold;
+    }
+
+    .error__description {
+        font-size: $fz-xl;
+    }
+}

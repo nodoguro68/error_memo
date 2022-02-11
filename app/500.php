@@ -1,25 +1,33 @@
 <?php
 
 $page_title = '500 Internal Server Error';
-require_once '../../template/head.php';
-require_once '../../template/header.php';
+require_once '../template/head.php';
+require_once '../template/header.php';
 ?>
 
 <main class="main">
     <div class="container">
-        <section class="error">
-            <h2 class="error__title">500 Internal Server Error</h2>
-            <p class="error__description">サーバーでエラーが発生しました</p>
-        </section>
+        <div class="contents">
+            <div class="contents__head">
+                <div class="link-wrap">
+                    <a href="index.php" class="link">＞ 戻る</a>
+                </div>
+            </div>
+            <div class="contents__body">
+                <section class="error">
+                    <h2 class="error__title"><span class="error__code">500</span> Internal Server Error</h2>
+                    <p class="error__description">サーバーでエラーが発生しました</p>
+                </section>
+            </div>
+            <div class="contents__foot">
 
-        <div class="link-wrap">
-            <a href="index.php" class="link">戻る</a>
+            </div>
         </div>
     </div>
 
 </main>
 
-<?php require_once '../../template/footer.php'; ?>
+<?php require_once '../template/footer.php'; ?>
 </body>
 
 </html>
