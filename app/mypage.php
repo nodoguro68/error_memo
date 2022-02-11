@@ -140,7 +140,7 @@ include '../template/header.php';
             <div class="mypage-contents">
                 <div class="user-info">
                     <div class="img-wrap">
-                        <img src="../public/images/no-image.jpeg" alt="プロフィール画像" class="user-info__img">
+                        <img src="../public/images/no-image.jpeg" alt="プロフィール画像" class="user-info__profile-img">
                     </div>
                     <p class="user-info__name">@ユーザーネーム</p>
                     <p>登録日:<span class="user-info__regisration-date">2022/01/01</span></p>
