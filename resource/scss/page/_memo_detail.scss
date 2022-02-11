@@ -1,4 +1,6 @@
 .memo-contents {
+    padding-top: 50px;
+
     .contents__body {
         margin-top: 0;
     }
@@ -39,10 +41,10 @@
 }
 
 .memo__body {
-    margin-top: $space-4l;
+    margin-top: 60px;
 
     .memo__group + .memo__group {
-        margin-top: $space-3l;
+        margin-top: $space-4l;
     }
 
     .memo__content-title {
@@ -53,12 +55,12 @@
     }
 
     .memo__content {
-        margin-top: $space-m;
+        margin-top: $space-xl;
     }
 }
 
 .memo__foot {
-    margin-top: $space-4l;
+    margin-top: 80px;
     display: flex;
     justify-content: space-between;
 }
@@ -66,7 +68,7 @@
 
 .reference-list {
     margin-left: $space-xxl;
-    margin-top: $space-m;
+    margin-top: $space-xl;
     list-style: disc;
 
 
