@@ -7,36 +7,34 @@ include '../template/header.php';
 
 <main class="main">
     <div class="container">
-        <section class="folder">
-            <div class="folder__header">
-                <h2 class="folder__title">フォルダ</h2>
-                <button type="button" class="folder__delete-btn">削除</button>
+        <div class="contents">
+            <div class="contents__head">
+                <h2 class="contents__title">フォルダ</h2>
+                <button type="button" class="contents__delete-btn">削除</button>
             </div>
-            <div class="folder__body">
+            <div class="contents__body">
                 <ul class="memo-list">
                     <ul class="memo-list">
                         <li class="memo-list__item">
                             <a href="memo_form.php?memo_id=" class="memo-list__link">
                                 <div class="memo-list__head">
                                     <span class="memo-list__label memo-list__label--unsolved">未解決</span>
+                                    <span class="memo-list__category">カテゴリー</span>
                                     <span class="memo-list__date">2022/01/01</span>
                                 </div>
-                                <span class="memo-list__title">未解決メモ</span>
-                            </a>
-                        </li>
-                        <li class="memo-list__item">
-                            <a href="memo_form.php?memo_id=" class="memo-list__link">
-                                <div class="memo-list__head">
-                                    <span class="memo-list__label memo-list__label--solved">解決済</span>
-                                    <span class="memo-list__date">2022/01/01</span>
+                                <div class="memo-list__body">
+                                    <span class="memo-list__title">未解決メモ</span>
                                 </div>
-                                <span class="memo-list__title">未解決メモ</span>
+                                <div class="memo-list__foot">
+
+                                </div>
                             </a>
                         </li>
+
                     </ul>
                 </ul>
             </div>
-        </section>
+        </div>
 
     </div>
 
