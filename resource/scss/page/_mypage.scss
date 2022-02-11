@@ -1,6 +1,8 @@
-.tab {
-    width: 100%;
-    background: $bg-main;
+.mypage-tab {
+    .tab {
+        width: 100%;
+        background: $bg-main;
+    }
     
     .tab__inner {
         display: flex;
@@ -20,10 +22,10 @@
             background: $bg-accent;
             border-top: none;
         }
-    }
-
-    .tab__item + .tab__item {
-        border-left: 3px solid $c-base;
+    
+        .tab__item + .tab__item {
+            border-left: 3px solid $c-base;
+        }
     }
 }
 
@@ -81,30 +83,25 @@
     }
 }
 
-
-
-.mypage-contents + .mypage-contents {
-    border-top: 1px solid rgb(207, 204, 204);
-}
-
 .mypage-contents {
+    .contents__head {
+        
+        .user-info {
+            text-align: center;
+        
+        }
 
-    .user-info {
-        text-align: center;
-    
         .user-info__profile-img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
         }
+
         .user-info__name {
             color: rgb(187, 184, 184);
         }
     
-        .user-info__follow {
-            margin-top: $space-m;
-        }
         .user-info__link {
             display: inline-block;
             min-width: 100px;
@@ -113,26 +110,32 @@
             color: $c-main;
             border-radius: 5px;
         }
+
         .user-info__count-area {
             display: flex;
             width: 100%;
             margin-top: $space-l;
     
-            .user-info__count-item {
-                width: calc(100% / 3);
-                padding: 15px;
-            }
-    
-            .user-info__count {
-                font-size: $fz-3l;
-            }
+        }
+
+        .user-info__count-item {
+            width: calc(100% / 3);
+            padding: 15px;
+        }
+
+        .user-info__count {
+            font-size: $fz-3l;
         }
     }
     
-    .url-list {
-        max-width: 500px;
-        margin: $space-3l auto;
+    .contents__body {
+        border-top: 1px solid rgb(207, 204, 204);
     
+        .url-list {
+            max-width: 500px;
+            margin: $space-3l auto;
+        
+        }
         .url-list__item {
             display: flex;
             padding: 5px 0;
@@ -149,13 +152,16 @@
             text-decoration: underline;
         }
     }
-    
-    .mypage-menu {
-        width: 100%;
-        max-width: 500px;
-        margin: $space-3l auto 0;
-        text-align: center;
-    
+    .contents__foot {
+        border-top: 1px solid rgb(207, 204, 204);
+        
+        .mypage-menu {
+            width: 100%;
+            max-width: 500px;
+            margin: $space-3l auto 0;
+            text-align: center;
+        }
+
         .mypage-menu__item + .mypage-menu__item {
             border-top: 1px solid rgb(207, 204, 204);
         }
@@ -166,4 +172,5 @@
             
         }
     }
+
 }
