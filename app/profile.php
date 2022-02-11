@@ -27,8 +27,8 @@ include '../template/header.php';
                 </div>
                 <div class="form__item">
                     <label for="description" class="form__label">自己紹介</label>
-                    <textarea name="description" class="form__textarea" id="description"></textarea>
-                    <div class="form__count-area"><span class="count">0</span>/200</div>
+                    <textarea name="description" class="form__textarea js-textarea" id="description"></textarea>
+                    <div class="form__count-area" id="countArea"><span class="count" id="count">0</span>/200</div>
                     <span class="err-msg"></span>
                 </div>
                 <div class="form__item">
@@ -72,7 +72,7 @@ include '../template/header.php';
 
 </main>
 <?php include '../template/footer.php' ?>
-
+<script src="../resource/js/text_count.js"></script>
 </body>
 
 </html>

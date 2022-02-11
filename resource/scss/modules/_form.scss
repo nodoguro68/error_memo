@@ -64,6 +64,10 @@
             background: $bg-main;
             padding: 10px 10px;
             border-radius: 3px;
+
+            &--error {
+                background: $bg-error;
+            }
         }
 
         .form__err-msg {
