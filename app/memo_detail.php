@@ -7,55 +7,74 @@ require_once '../template/header.php';
 
 <main class="main">
     <div class="container">
-        <div class="link-wrap">
-            <a href="index.php" class="link">戻る</a>
+        <div class="contents memo-contents">
+
+            <div class="contents__body">
+                <div class="memo">
+                    <div class="memo__head">
+                        <div class="memo__info">
+                            <span class="memo__category">カテゴリー</span>
+                            <span class="memo__date">2022/01/01</span>
+                        </div>
+                        <h2 class="memo__title">エラータイトルエラータイトルエラータイトル</h2>
+
+                    </div>
+
+                    <div class="memo__body">
+                        <div class="memo__group">
+                            <h3 class="memo__content-title">エラー内容</h3>
+                            <p class="memo__content">エラー内容エラー内容エラー内容エラー内容エラー内容エラー内容エラー内容エラー内容エラー内容エラー内容エラー内容エラー内容エラー内容エラー内容エラー内容エラー内容エラー内容</p>
+                        </div>
+                        <div class="memo__group">
+                            <h3 class="memo__content-title">やりたいこと</h3>
+                            <p class="memo__content">やりたいことやりたいことやりたいことやりたいことやりたいことやりたいことやりたいことやりたいことやりたいこと</p>
+                        </div>
+                        <div class="memo__group">
+                            <h3 class="memo__content-title">試したこと</h3>
+                            <p class="memo__content">試したこと試したこと試したこと試したこと試したこと試したこと試したこと試したこと試したこと試したこと試したこと</p>
+                        </div>
+                        <div class="memo__group">
+                            <h3 class="memo__content-title memo__content-title--solution">解決方法</h3>
+                            <p class="memo__content">解決方法解決方法解決方法解決方法解決方法解決方法解決方法解決方法解決方法解決方法解決方法解決方法解決方法</p>
+                        </div>
+                        <div class="memo__group">
+                            <h3 class="memo__content-title">原因</h3>
+                            <p class="memo__content">原因原因原因原因原因原因原因原因原因原因原因原因原因原因原因原因原因原因原因原因原因原因原因原因原因原因原因原因原因原因原因原因原因原因原因</p>
+                        </div>
+                        <div class="memo__group">
+                            <h3 class="memo__content-title">参考</h3>
+                            <ul class="reference-list">
+                                <li class="reference-list__item">
+                                    <a href="" class="reference-list__link">url</a>
+                                </li>
+                                <li class="reference-list__item">
+                                    <a href="" class="reference-list__link">url</a>
+                                </li>
+                                <li class="reference-list__item">
+                                    <a href="" class="reference-list__link">url</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="memo__group">
+                            <h3 class="memo__content-title">その他</h3>
+                            <p class="memo__content">その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他その他</p>
+                        </div>
+                    </div>
+
+                    <div class="memo__foot">
+                        <div class="user-info">
+                            <a href="user_detail.php"><img src="../public/images/no-image.jpeg" alt="プロフィール画像" class="user-info__profile-img"></a>
+                            <span class="user-info__name">@ユーザーネーム</span>
+                        </div>
+                        <div class="memo__favor">
+                            <button type="button" class="memo__favor-btn"><i class="far fa-heart"></i></button>
+                            <span class="memo__favor-count">1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-
-        <section class="user-info">
-            <a href="user_detail.php"><img src="" alt="プロフィール画像" class="user-info__profile-img"></a>
-            <p class="user-info__name">ユーザーネーム</p>
-        </section>
-
-        <section class="memo">
-            <div class="memo__header">
-                <h2 class="memo__title">エラータイトル</h2>
-                <span class="memo__date">2022/01/01</span>
-                <span class="memo__category">カテゴリータイトル</span>
-            </div>
-
-            <div class="memo__body">
-                <p class="memo__content">エラー内容</p>
-                <p class="memo__content">やりたいこと</p>
-                <p class="memo__content">試したこと</p>
-                <p class="memo__content">解決方法</p>
-                <p class="memo__content">原因</p>
-                <p class="memo__content">参考</p>
-                <p class="memo__content">etc</p>
-            </div>
-
-            <div class="memo__footer">
-                <button type="button" class="favorite-btn">いいね</button>
-                <div class="count-area">
-                    <span class="count">1</span>
-                </div>
-            </div>
-        </section>
-
-        <section class="comments">
-            <div class="comment">
-                <div class="comment__user-info">
-                    <img src="" alt="プロフィール画像" class="comment__profile-img">
-                    <p class="comment_name">ユーザーネーム</p>
-                </div>
-                <p class="comment__date">2022/01/01</p>
-                <p class="comment__text">コメント</p>
-            </div>
-        </section>
-
-        <form method="post" class="comment-form">
-            <input type="text" name="comment" class="form__input" placeholder="コメントを入力">
-            <input type="submit" value="送信" class="submit-btn">
-        </form>
     </div>
 
 </main>
