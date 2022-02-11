@@ -35,7 +35,7 @@ include '../template/header.php';
                                 </div>
                                 <div class="memo-list__foot">
                                     <div class="memo-list__user-info">
-                                        <img src="../public/images/tsutsuiayame_prof.jpeg" alt="" class="memo-list__profile-img">
+                                        <img src="../public/images/no-image.jpeg" alt="" class="memo-list__profile-img">
                                         <span class="memo-list__username">@ユーザー</span>
                                     </div>
                                     <div class="memo-list__favor">
@@ -56,7 +56,7 @@ include '../template/header.php';
                                 </div>
                                 <div class="memo-list__foot">
                                     <div class="memo-list__user-info">
-                                        <img src="../public/images/tsutsuiayame_prof.jpeg" alt="" class="memo-list__profile-img">
+                                        <img src="../public/images/no-image.jpeg" alt="" class="memo-list__profile-img">
                                         <span class="memo-list__username">@ユーザー</span>
                                     </div>
                                     <div class="memo-list__favor">
