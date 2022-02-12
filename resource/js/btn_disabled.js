@@ -21,5 +21,4 @@ var form = {
     }
 };
 
-form.disabledBtn(form.input.category, form.btn.category);
-form.disabledBtn(form.input.folder, form.btn.folder);
+form.disabledBtn(form.input.category || form.input.folder, form.btn.category || form.btn.folder);
