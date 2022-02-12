@@ -10,7 +10,7 @@ include '../template/header.php';
         <div class="contents">
             <div class="contents__head">
                 <h2 class="contents__title">フォルダ</h2>
-                <button type="button" class="contents__delete-btn">削除</button>
+                <button type="button" class="contents__delete-btn" id="openModalBtn">削除</button>
             </div>
             <div class="contents__body">
                 <ul class="memo-list">
@@ -38,25 +38,27 @@ include '../template/header.php';
 
     </div>
 
-    <div class="modal">
+    <div class="modal" id="modal">
         <div class="modal__head">
             <p class="modal__text">フォルダ内の全てのメモも削除されますがよろしいですか？</p>
+            <button class="modal__close-btn" id="closeModalBtn"><i class="fas fa-times"></i></button>
         </div>
         <div class="modal__body">
             <form method="post" class="modal__form">
                 <div class="btn-wrap">
-                    <button type="button" class="modal-btn modal-btn--cancel">キャンセル</button>
+                    <button type="button" class="modal-btn modal-btn--cancel" id="cancelBtn">キャンセル</button>
                     <input type="submit" name="delete_folder" value="削除" class="modal-btn modal-btn--delete">
                 </div>
             </form>
         </div>
     </div>
 
-    <div class="modal-bg"></div>
+    <div class="modal-bg" id="modalBg"></div>
 
 </main>
 <?php include '../template/footer.php' ?>
 
+<script src="../resource/js/modal.js"></script>
 </body>
 
 </html>
