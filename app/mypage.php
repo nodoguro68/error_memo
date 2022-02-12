@@ -22,8 +22,8 @@ include '../template/header.php';
 
         <div class="tab-menu tab-menu--active">
             <form method="post" class="folder-form">
-                <input type="text" name="create_folder" class="folder-form__input" placeholder="フォルダを作成">
-                <input type="submit" value="＋" class="folder-form__submit-btn" disabled>
+                <input type="text" name="create_folder" class="folder-form__input" id="folderInput" placeholder="フォルダを作成">
+                <input type="submit" value="＋" class="folder-form__submit-btn" id="folderSubmitBtn" disabled>
                 <span class="err-msg"></span>
             </form>
 
@@ -187,6 +187,7 @@ include '../template/header.php';
 </main>
 <?php include '../template/footer.php' ?>
 
+<script src="../resource/js/btn_disabled.js"></script>
 </body>
 
 </html>

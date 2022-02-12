@@ -80,6 +80,11 @@
         text-align: center;
         background: $bg-accent;
         color: #fff;
+
+        &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
     }
 }
 

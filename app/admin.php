@@ -24,7 +24,7 @@ include '../template/header.php';
             <div class="contents__inner">
                 <div class="contents__head">
                     <h2 class="contents__title">カテゴリー一覧</h2>
-                    
+
                     <div class="err-msg__area">
                         <span class="err-msg">エラー</span>
                     </div>
@@ -32,10 +32,10 @@ include '../template/header.php';
 
                 <div class="contents__body">
                     <form method="post" class="category-form">
-                        <input type="text" name="category" class="category-form__input" placeholder="カテゴリーを入力">
-                        <input type="submit" value="保存" class="category-form__submit-btn">
+                        <input type="text" name="category" class="category-form__input" id="categoryInput" placeholder="カテゴリーを入力">
+                        <input type="submit" value="保存" class="category-form__submit-btn" id="categorySubmitBtn" disabled>
                     </form>
-    
+
                     <ul class="category-list">
                         <li class="category-list__item">
                             <span class="category-list__name">カテゴリー</span>
@@ -65,6 +65,8 @@ include '../template/header.php';
     <div class="modal-bg"></div>
 </main>
 <?php include '../template/footer.php' ?>
+<script src="../resource/js/btn_disabled.js"></script>
+
 </body>
 
 </html>
