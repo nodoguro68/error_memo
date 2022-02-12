@@ -6,6 +6,11 @@
     var modal = document.getElementById('modal');
     var modalBg = document.getElementById('modalBg');
 
+    var hideModal = function() {
+        modal.style.display = 'none';
+        modalBg.style.display = 'none';
+    }
+
     openModalBtn.addEventListener('click', function() {
         
         modal.style.display = 'block';
@@ -14,18 +19,15 @@
 
     cancelBtn.addEventListener('click', function() {
         
-        modal.style.display = 'none';
-        modalBg.style.display = 'none';
+        hideModal();
     });
 
     modalBg.addEventListener('click', function() {
-        modal.style.display = 'none';
-        modalBg.style.display = 'none';
+        hideModal();
     });
 
     closeModalBtn.addEventListener('click', function() {
-        modal.style.display = 'none';
-        modalBg.style.display = 'none';
+        hideModal();
     });
 
 })();
