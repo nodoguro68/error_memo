@@ -188,6 +188,7 @@ include '../template/header.php';
 <?php include '../template/footer.php' ?>
 
 <script src="../resource/js/btn_disabled.js"></script>
+<script src="../resource/js/tab_menu.js"></script>
 </body>
 
 </html>

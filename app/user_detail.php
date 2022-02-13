@@ -108,6 +108,8 @@ require_once '../template/header.php';
 </main>
 
 <?php include '../template/footer.php' ?>
+
+<script src="../resource/js/tab_menu.js"></script>
 </body>
 
 </html>
