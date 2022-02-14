@@ -48,7 +48,7 @@ include '../template/header.php';
                     <div class="memo-form__item">
                         <label for="title" class="memo-form__label">エラータイトル</label>
                         <span class="memo-form__require-label">必須</span>
-                        <input type="text" name="title" class="memo-form__input" id="title" value="" autofocus>
+                        <input type="text" name="title" class="memo-form__input" id="title" value="">
                         <span class="err-msg"></span>
                     </div>
                 </div>
@@ -69,10 +69,15 @@ include '../template/header.php';
                     <!-- 試したこと -->
                     <div class="memo-form__item">
                         <label for="attempt" class="memo-form__label">試したこと</label>
-                        <textarea name="attempt[]" class="memo-form__textarea memo-form__textarea--dynamic"></textarea>
+                        <ul class="form-list js-textarea-list">
+                            <li class="form-list__item js-form-item">
+                                <textarea name="attempt[]" class="memo-form__textarea memo-form__textarea--dynamic"></textarea>
+                                <button type="button" class="form-list__delete-btn js-delete-form-btn"><i class="far fa-times-circle"></i></button>
+                            </li>
+                        </ul>
                         <span class="err-msg"></span>
                         <div class="btn-wrap">
-                            <button type="button" class="add-input-btn">＋</button>
+                            <button type="button" class="add-input-btn js-add-textarea-btn">＋</button>
                         </div>
                     </div>
                     <!-- 解決方法 -->
@@ -90,11 +95,15 @@ include '../template/header.php';
                     <!-- 参考 -->
                     <div class="memo-form__item">
                         <label for="reference" class="memo-form__label">参考</label>
-                        <input type="text" name="reference[]" class="memo-form__input"  value="">
-                        <input type="text" name="reference" class="memo-form__input"  value="">
+                        <ul class="form-list js-input-list">
+                            <li class="form-list__item js-form-item">
+                                <input type="text" name="reference[]" class="memo-form__input js-form-input" value="">
+                                <button type="button" class="form-list__delete-btn js-delete-form-btn"><i class="far fa-times-circle"></i></button>
+                            </li>
+                        </ul>
                         <span class="err-msg"></span>
                         <div class="btn-wrap">
-                            <button type="button" class="add-input-btn">＋</button>
+                            <button type="button" class="add-input-btn js-add-input-btn">＋</button>
                         </div>
                     </div>
                     <!-- その他 -->
@@ -116,6 +125,7 @@ include '../template/header.php';
 
 </main>
 <?php include '../template/footer.php' ?>
+<script src="../resource/js/input.js"></script>
 
 </body>
 

@@ -102,6 +102,15 @@
             background: $bg-main;
             border-radius: 3px;
             outline: none;
+
+            &::after {
+                content: '\f057';
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                width: 10px;
+                height: 10px;
+                color: #000;
+            }
         }
 
         .memo-form__input + .memo-form__input {
@@ -155,4 +164,31 @@
         }
     }
 
+}
+
+
+.form-list {
+
+    .form-list__item {
+        position: relative;
+        display: flex;
+    }
+
+    .form-list__item + .form-list__item {
+        margin-top: $space-m;
+    }
+
+    .form-list__delete-btn {
+        display: none;
+        position: absolute;
+        top: 5px;
+        right: -30px;
+        width: 30px;
+        text-align: center;
+        font-size: $fz-xl;
+
+        &--active {
+            display: block;
+        }
+    }
 }
