@@ -14,10 +14,10 @@ include '../template/header.php';
             </div>
             <div class="form__body">
                 <div class="form__item">
-                    <div class="preview">
-                        <input type="file" name="profile_img" class="preview__file">
-                        <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
+                    <div class="preview" id="preview">
+                        <input type="file" name="profile_img" class="preview__file" id="previewFile">
                         <img src="../public/images/no-image.jpeg" alt="プロフィール画像" class="preview__img">
+                        <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
                     </div>
                 </div>
                 <div class="form__item">
@@ -73,6 +73,7 @@ include '../template/header.php';
 </main>
 <?php include '../template/footer.php' ?>
 <script src="../resource/js/text_count.js"></script>
+<script src="../resource/js/live_preview.js"></script>
 </body>
 
 </html>
