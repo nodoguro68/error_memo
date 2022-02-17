@@ -5,6 +5,10 @@
     .header-wrap {
         height: 100%;
         padding: 5px 20px;
+
+        @include mq() {
+            padding: 5px 10px;  
+        }
     }
 }
 
@@ -27,6 +31,12 @@
             &:hover {
                 color: $c-default;
                 border-bottom: 3px solid $c-default;
+            }
+
+            &--icon {
+                &:hover {
+                    border: none;
+                }
             }
         }
         
