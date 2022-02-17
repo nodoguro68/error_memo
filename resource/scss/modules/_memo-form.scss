@@ -2,7 +2,11 @@
     background: $bg-base;
 
     .memo-form__inner {
-        padding: 30px;
+        padding: 30px 0;
+
+        @include mq('tb') {
+            padding: 30px;
+        }
     }
     
     .memo-form__header {
@@ -24,12 +28,14 @@
         .memo-form__item {
             position: relative;
             margin-top: $space-m;
-
+            
             &--2column {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
                 margin-top: $space-l;
+                @include mq('tb') {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    align-items: center;
+                }
             }
         }
 
@@ -46,6 +52,9 @@
         
         .memo-form__selectbox-wrap {
             position: relative;
+            max-width: 450px;
+            width: 100%;
+
 
             &::after {
                 content:"";
@@ -63,11 +72,25 @@
         
 
         .memo-form__selectbox {
-            width: 300px;
+            width: 100%;
             padding: 3px 10px;
             background: $bg-main;
             outline: none;
             border-radius: 10px;
+
+        }
+        
+        .memo-form__radio-group {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: $space-m;
+
+            text-align: right;
+
+            @include mq('tb') {
+                display: block;
+            }
 
         }
 
@@ -155,7 +178,8 @@
             text-align: center;
 
             .submit-btn {
-                width: 300px;
+                max-width: 450px;
+                width: 100%;
                 padding: 10px 5px;
                 background: $bg-accent;
                 color: #fff;
