@@ -9,10 +9,6 @@ include '../template/header.php';
 <main class="main">
     <div class="container">
 
-        <div class="link-wrap">
-            <a href="" class="link">＞ 戻る</a>
-        </div>
-
         <form method="post" class="memo-form">
             <div class="memo-form__inner">
                 <div class="memo-form__header">
@@ -23,6 +19,18 @@ include '../template/header.php';
 
                     <div class="memo-form__item--2column">
                         <!-- カテゴリー -->
+                        <div class="memo-form__radio-group">
+                            <!-- 解決済みかどうか -->
+                            <div class="memo-form__radio">
+                                <label for="unsolved" class="memo-form__label">未解決</label><input type="radio" name="is_solved" value="0" class="memo-form__radio-btn" id="unsolved">
+                                <label for="solved" class="memo-form__label">解決</label><input type="radio" name="is_solved" value="1" class="memo-form__radio-btn" id="solved">
+                            </div>
+                            <!-- 公開するかどうか -->
+                            <div class="memo-form__radio">
+                                <label for="private" class="memo-form__label">非公開</label><input type="radio" name="is_published" value="0" class="memo-form__radio-btn" id="private">
+                                <label for="public" class="memo-form__label">公開</label><input type="radio" name="is_published" value="1" class="memo-form__radio-btn" id="public">
+                            </div>
+                        </div>
                         <div class="memo-form__selectbox-wrap">
                             <select name="category_id" id="category" class="memo-form__selectbox">
                                 <option value="0">未分類</option>
@@ -30,18 +38,6 @@ include '../template/header.php';
                                 <option value="0">PHP</option>
                             </select>
                             <span class="err-msg"></span>
-                        </div>
-                        <div class="memo-form__radio-group">
-                            <!-- 公開するかどうか -->
-                            <div class="memo-form__radio">
-                                <label for="private" class="memo-form__label">非公開</label><input type="radio" name="is_published" value="0" class="memo-form__radio-btn" id="private">
-                                <label for="public" class="memo-form__label">公開</label><input type="radio" name="is_published" value="1" class="memo-form__radio-btn" id="public">
-                            </div>
-                            <!-- 解決済みかどうか -->
-                            <div class="memo-form__radio">
-                                <label for="unsolved" class="memo-form__label">未解決</label><input type="radio" name="is_solved" value="0" class="memo-form__radio-btn" id="unsolved">
-                                <label for="solved" class="memo-form__label">解決済み</label><input type="radio" name="is_solved" value="1" class="memo-form__radio-btn" id="solved">
-                            </div>
                         </div>
                     </div>
                     <!-- エラータイトル -->
