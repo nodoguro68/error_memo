@@ -12,7 +12,7 @@ include '../template/header.php';
             <div class="contents__head">
                 <form method="get" name="search" class="search-form">
                     <input type="search" name="q" value="" class="search-form__input" placeholder="メモを検索">
-                    <input type="submit" value="検索" class="search-form__submit-btn">
+                    <button type="submit" class="search-form__submit-btn"><i class="fas fa-search"></i></button>
                 </form>
 
                 <div class="err-msg__area">
@@ -23,52 +23,32 @@ include '../template/header.php';
 
             <div class="contents__body">
                 <ul class="memo-list">
-                    <ul class="memo-list">
-                        <li class="memo-list__item">
-                            <a href="memo_form.php" class="memo-list__link">
-                                <div class="memo-list__head">
-                                    <span class="memo-list__category">カテゴリー</span>
-                                    <span class="memo-list__date">2022/01/01</span>
+                    <li class="memo-list__item">
+                        <a href="memo_form.php" class="memo-list__link">
+                            <div class="memo-list__head">
+                                <span class="memo-list__category">カテゴリー</span>
+                                <span class="memo-list__date">2022/01/01</span>
+                            </div>
+                            <div class="memo-list__body">
+                                <span class="memo-list__title">
+                                    エラーエラーエラーエラーエラーエラーエラーエラー
+                                </span>
+                            </div>
+                            <div class="memo-list__foot">
+                                <div class="memo-list__user-info">
+                                    <img src="../public/images/no-image.jpeg" alt="プロフィール画像" class="memo-list__profile-img">
+                                    <span class="memo-list__username">@ユーザー</span>
                                 </div>
-                                <div class="memo-list__body">
-                                    <span class="memo-list__title">エラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラー</span>
+                                <div class="memo-list__favor">
+                                    <span class="memo-list__favor-icon"><i class="far fa-heart"></i></span>
+                                    <span class="memo-list__favor-count">1</span>
                                 </div>
-                                <div class="memo-list__foot">
-                                    <div class="memo-list__user-info">
-                                        <img src="../public/images/no-image.jpeg" alt="" class="memo-list__profile-img">
-                                        <span class="memo-list__username">@ユーザー</span>
-                                    </div>
-                                    <div class="memo-list__favor">
-                                        <span class="memo-list__favor-icon"><i class="far fa-heart"></i></span>
-                                        <span class="memo-list__favor-count">1</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="memo-list__item">
-                            <a href="memo_form.php" class="memo-list__link">
-                                <div class="memo-list__head">
-                                    <span class="memo-list__category">カテゴリー</span>
-                                    <span class="memo-list__date">2022/01/01</span>
-                                </div>
-                                <div class="memo-list__body">
-                                    <span class="memo-list__title">エラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラーエラー</span>
-                                </div>
-                                <div class="memo-list__foot">
-                                    <div class="memo-list__user-info">
-                                        <img src="../public/images/no-image.jpeg" alt="" class="memo-list__profile-img">
-                                        <span class="memo-list__username">@ユーザー</span>
-                                    </div>
-                                    <div class="memo-list__favor">
-                                        <span class="memo-list__favor-icon"><i class="far fa-heart"></i></span>
-                                        <span class="memo-list__favor-count">1</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </div>
+
             <div class="contents__foot">
                 <ul class="pagination">
                     <!-- <li class="pagination__item"><a href="" class="pagination__link pagination__link--arrow">&lt;&lt;</a></li>
