@@ -7,24 +7,11 @@ include '../template/header.php';
 
 <main class="main">
     <div class="container container--2column">
-        <aside class="sidebar">
-            <div class="sidebar__inner">
-                <div class="admin-info">
-                    <h2 class="admin-info__title">管理画面</h2>
-                    <p class="admin-info__name">@ユーザー</p>
-                </div>
-                <ul class="link-list">
-                    <li class="link-list__item"><a href="admin.php" class="link-list__link">HOME</a></li>
-                    <li class="link-list__item"><a href="category.php" class="link-list__link">カテゴリー</a></li>
-                </ul>
-            </div>
-        </aside>
 
         <section class="contents contents--2column">
             <div class="contents__inner">
                 <div class="contents__head">
-                    <h2 class="contents__title">カテゴリー一覧</h2>
-
+                    <h2 class="contents__title">管理画面 カテゴリー</h2>
                     <div class="err-msg__area">
                         <span class="err-msg">エラー</span>
                     </div>
@@ -46,6 +33,18 @@ include '../template/header.php';
 
             </div>
         </section>
+
+        <aside class="sidebar">
+            <div class="sidebar__inner">
+                <div class="admin-info">
+                    <p class="admin-info__name">@ユーザー</p>
+                </div>
+                <ul class="link-list">
+                    <li class="link-list__item"><a href="admin.php" class="link-list__link">HOME</a></li>
+                    <li class="link-list__item"><a href="category.php" class="link-list__link">カテゴリー</a></li>
+                </ul>
+            </div>
+        </aside>
     </div>
 
     <div class="modal" id="modal">

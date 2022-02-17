@@ -1,14 +1,5 @@
 .admin-info {
     text-align: center;
-
-    .admin-info__title {
-        font-size: $fz-xxl;
-        font-weight: bold;
-    }
-
-    .admin-info__name {
-        color: $c-base;
-    }
 }
 
 .link-list {
@@ -33,7 +24,7 @@
     margin-top: $space-xxl;
 
     .category-form__input {
-        width: 75%;
+        width: 100%;
         padding: 10px;
         outline: none;
         background: $bg-base;

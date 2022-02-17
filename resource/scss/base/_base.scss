@@ -1,10 +1,14 @@
 html body {
     // font-family: $font;
-    font-size: $fz-default;
+    font-size: $fz-m;
     color: $c-default;
     background: $bg-base;
     line-height: 1.5;
     letter-spacing: 0.1em;
+
+    @include mq('tb') {
+        font-size: $fz-default;
+    }
 }
 
 ul {
@@ -23,15 +27,24 @@ main {
     padding: 30px 4%;
 
     &--2column {
-        display: flex;
+        
+        @include mq('tb') {
+            display: flex;
+            flex-direction: row-reverse;
+        }
     }
 }
 
 .sidebar {
-    width: 30%;
-    min-height: 600px;
+    width: 100%;
+    min-height: 0;
     padding: 10px;
     background: $bg-main;
+    
+    @include mq('tb') {
+        width: 30%;
+        max-height: 600px;
+    }
 }
 
 .contents {
@@ -40,16 +53,13 @@ main {
     background: $bg-main;
 
     &--2column {
-        width: 65%;
-        margin-left: 5%;
+        width: 100%;
+        
+        @include mq('tb') {
+            width: 65%;
+            margin-left: 5%;
+        }
     }
-
-    // &--index {
-
-    //     .contents__body {
-    //         border-top: 1px solid rgb(182, 179, 179);
-    //     }
-    // }
 
     .contents__head {
         position: relative;
