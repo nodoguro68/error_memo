@@ -1,8 +1,12 @@
 .search-form {
-    width: 70%;
+    width: 100%;
     position: relative;
     margin: 0 auto;
-    
+
+    @include mq('tb') {
+        width: 70%;
+    }
+
     .search-form__input {
         width: 100%;
         padding: 10px;
