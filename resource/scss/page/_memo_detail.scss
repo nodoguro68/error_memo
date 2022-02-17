@@ -34,9 +34,13 @@
 
     .memo__title {
         margin-top: $space-m;
-        font-size: $fz-3l;
+        font-size: $fz-xxl;
         font-weight: bold;
         line-height: 1.2;
+
+        @include mq('tb') {
+            font-size: $fz-3l;
+        }
     }
 }
 
@@ -49,8 +53,12 @@
 
     .memo__content-title {
         border-bottom: 1px solid rgb(177, 175, 175);
-        font-size: $fz-xl;
+        font-size: $fz-l;
         font-weight: bold;
+
+        @include mq('tb') {
+            font-size: $fz-xl;
+        }
 
     }
 
