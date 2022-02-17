@@ -3,6 +3,11 @@
 
     .memo-list__item {
         position: relative;
+        transition: .3s;
+
+        &:hover {
+            transform: translateY(-4px);
+        }
     }
 
     .memo-list__item + .memo-list__item {
@@ -53,10 +58,15 @@
 
     .memo-list__title {
         display: block;
+        min-height: 70px;
         margin-top: $space-s;
         font-size: $fz-xl;
         color: $c-accent;
         font-weight: bold;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
     }
 }
 
